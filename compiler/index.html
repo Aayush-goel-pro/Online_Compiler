@@ -1,0 +1,84 @@
+<html>
+
+<head>
+  <style>
+    body{
+      margin: 0px;
+      padding: 0px;
+      background: #FFF8DC;
+
+    }
+    h1{
+      font-size: 2em;
+    }
+    h3{
+      display: inline;
+      font-size: 1.5em;
+      padding: 1%;
+    }
+    select{
+      margin-top: 0.5%;
+      display: inline;
+      font-size: 1.25em;
+      float: right;
+      margin-right: 1%;
+    }
+  #textEditor{
+    margin-left: 0.5%;
+    margin-top: 1%;
+    font-size: 1.5em;
+    width: 99%;
+    height: 50%;
+    resize: none;
+    display: block;
+  }
+  #console{
+    background: black;
+    color: white;
+    margin-left: 0.5%;
+    margin-top: 0.5%;
+    font-size: 1.5em;
+    width: 99%;
+    height: 25%;
+}
+
+  #btn{
+    border: 1px solid black;
+    background: #FFD700;
+    margin-top: 1%;
+    margin-left: 1%;
+    font-size: 1em;
+    width: 8%;
+    height: 4%;
+  }
+  #clearbtn{
+    border: 1px solid black;
+    background: #FFD700;
+    margin-top: 1%;
+    margin-left: 1%;
+    font-size: 1em;
+    width: 8%;
+    height: 4%;
+  }
+  </style>
+</head>
+
+<body>
+  <h1 align="center">Online Compiler</h1>
+  <h3>Type your Code</h3>
+  <select id="language">
+    <option value="null">Choose Language</option>
+    <option value="7">C</option>
+    <option value="77">C++</option>
+    <option value="8">Java</option>
+    <option value="0">Python</option>
+    <option value="4">Javascript</option>
+  </select>
+  <textarea id="textEditor" placeholder="Enter Code Here !"></textarea>
+  <div id="console"></div>
+  <button id="btn">Compile</button>
+  <button id="clearbtn">Clear</button>
+</body>
+<script src="script.js"></script>
+
+</html>
